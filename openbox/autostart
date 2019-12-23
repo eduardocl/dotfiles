@@ -1,0 +1,29 @@
+#!/bin/sh
+#xcompmgr -n &
+#cairo-dock &
+compton &
+tint2 &
+setxkbmap br &
+#xscreensaver &
+#feh not works with pcmanfm
+#feh --bg-scale ~/Documents/wallpaper/vagabundo.jpg
+#allow desktop with icons
+#the first time you run pcmanfm the menu opened when
+#you right-click in mouse is not openbox's menu. Type
+#pcmanfm --desktop-pref
+#go to 'advanced tab' and check 'Show menu provided by window managers when desktop is clicked'  
+#
+pcmanfm --desktop &
+
+#set wallpaper - should type the complete path
+pcmanfm --set-wallpaper=/home/82035644020/Documentos/Imagens/wallpapers/dark_forest-wallpaper-1920x1200.jpg  & #--wallpaper-mode=stretch
+
+#volume control
+#see rc.xml for Ctrl+Shift+up and Ctrl+Shift+Down
+sleep 1
+/usr/bin/volti &
+conky -c /home/82035644020/.config/openbox/conkyrc.ecl.conf &
+classicmenu-indicator &
+sh -c "sleep 10 && xscreensaver -no-splash &"
+
+pcmanfm --desktop &

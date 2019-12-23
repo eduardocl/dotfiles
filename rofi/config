@@ -1,0 +1,14 @@
+rofi.combi-modi:	drun,run
+rofi.modi:		combi
+rofi.terminal:		kitty
+rofi.display-combi: Search  
+rofi.hide-scrollbar: true
+rofi.separator-style: none
+rofi.bw: 2
+rofi.padding: 36
+rofi.color-enabled: true
+rofi.color-window: #B3282828,#00282828,#00282828
+rofi.color-normal: #00282828,#ebdbb2,#00282828,#00282828,#689d6a
+rofi.color-active: #00282828,#d79921,#00282828,#00282828,#fabd2f
+rofi.color-urgent: #00282828,#cc241d,#00282828,#00282828,#fb4934
+rofi.theme: /usr/share/rofi/themes/solarized.rasi

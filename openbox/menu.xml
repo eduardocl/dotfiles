@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://openbox.org/
+                file:///usr/share/openbox/menu.xsd">
+
+<menu id="root-menu" label="Openbox 3">
+  <item label="Terminal emulator" icon="/usr/share/icons/gnome/22x22/apps/gnome-terminal.png">
+    <action name="Execute"><execute>x-terminal-emulator</execute></action>
+  </item>
+
+  <item label="Firefox" icon="/home/82035644020/Programas/firefox-50-64bits/browser/chrome/icons/default/default16.png" >
+    <action name="Firefox"><execute>/home/82035644020/Programas/firefox-50-64bits/firefox</execute></action>
+  </item>
+
+  <item label="Nautilus (W-f)" icon="/usr/share/icons/gnome/22x22/apps/file-manager.png" >
+    <action name="Nautilus"><execute>nautilus --no-desktop</execute></action>
+  </item>
+
+  <item label="PCmanFM" icon="/usr/share/icons/gnome/22x22/apps/file-manager.png" >
+    <action name="PCmanFM"><execute>/usr/bin/pcmanfm</execute></action>
+  </item>
+
+  <item label="Filezilla" icon="/usr/share/icons/hicolor/16x16/apps/filezilla.png" >
+    <action name="Filezilla"><execute>/usr/bin/filezilla</execute></action>
+  </item>
+  
+  <!-- This requires the presence of the 'menu' package to work -->
+  <menu id="/Debian" />
+   
+  <separator />
+
+  <menu id="client-list-menu" />
+
+  <separator />
+
+  <menu execute="/usr/bin/openbox-menu gnome-applications.menu" id="desktop-app-menu-1" label="Gnome"/>
+
+
+  <item label="ObConf">
+    <action name="Execute"><execute>obconf</execute></action>
+  </item>
+  <item label="Reconfigure">
+    <action name="Reconfigure" />
+  </item>
+  <item label="Restart">
+    <action name="Restart" />
+  </item>
+  <separator />
+  <item label="Exit">
+    <action name="Exit" />
+  </item>
+  
+</menu>
+
+
+
+
+</openbox_menu>
